@@ -12,14 +12,12 @@ export default function ButtonGroup({ toggleAnimation, audioRef }: ButtonGroupTy
   const restartAudio = () => {
     if (audioRef.current) {
       audioRef.current.currentTime = 0;
-      // audioRef.current.pause();
     }
   };
 
   const skipAudio = () => {
     if (audioRef.current) {
       audioRef.current.currentTime = audioRef.current.duration;
-      // audioRef.current.pause();
     }
   };
 
@@ -31,7 +29,12 @@ export default function ButtonGroup({ toggleAnimation, audioRef }: ButtonGroupTy
       <button onClick={toggleAnimation}>
         <img src={playMusic} alt="player image" />
       </button>
-      <button onClick={skipAudio}>
+      <button
+        onClick={() => {
+          skipAudio();
+          toggleAnimation();
+        }}
+      >
         <img src={nextMusic} alt="player image" />
       </button>
     </div>

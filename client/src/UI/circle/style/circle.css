@@ -16,6 +16,7 @@
 }
 
 .circle {
+  display: block;
   position: absolute;
   top: 35%;
   left: 55%;
@@ -24,7 +25,7 @@
   border-radius: 50%;
   overflow: hidden;
   z-index: 6;
-  animation: rotateColors 4s linear infinite;
+  animation: rotateColors 10s linear infinite;
 }
 
 .no-animation {

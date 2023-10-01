@@ -20,7 +20,7 @@ function App(): JSX.Element {
     }
   };
   const circleClassName = isAnimationEnabled ? 'circle' : 'circle no-animation';
-  
+
   return (
     <>
       <div className="app"></div>
