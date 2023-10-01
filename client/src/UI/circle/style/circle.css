@@ -7,120 +7,12 @@
 }
 
 :root {
-  --green: #2a7c5b;
-  --opacityGreen: #a3d6c1;
   --yellow: #ffcc00;
-  --violet: #4f58e2;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-
-button {
-  align-items: center;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  background-color: var(--opacityGreen);
-  border: none;
-}
-.volume-button {
-  background-color: transparent;
-}
-
-.app {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-left: 480px solid transparent;
-  border-right: 480px solid transparent;
-  border-bottom: 950px solid var(--opacityGreen);
-  top: -200px;
-  left: -100px;
-}
-
-.app::before,
-.app::after {
-  display: block;
-  content: '';
-  width: 300px;
-  height: 200px;
-  background-color: var(--opacityGreen);
-  position: absolute;
-  bottom: -1149px;
-}
-
-.app::before {
-  right: -526px;
-  transform: skew(25deg);
-}
-
-.app::after {
-  left: -526px;
-  transform: skew(-25deg);
-}
-
-.player {
-  position: absolute;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 200px;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 6%;
-  z-index: 5;
-  box-shadow: 0 0 7px 0px black;
-}
-
-.oneGroup {
-  display: flex;
-  flex-direction: column;
-  margin: 0 5px;
-}
-
-.twoGroup {
-  margin: 0 5px;
-  display: flex;
-  flex: 1;
-}
-
-.twoGroup > * {
-  margin: auto;
-}
-
-.button-group {
-  display: flex;
-}
-
-.volumeLine,
-.shortLine {
-  position: relative;
-  width: 200px;
-  height: 4px;
-  background-color: var(--green);
-  margin-top: 30px;
-}
-
-.shortLine {
-  /* align-items: center; */
-}
-
-.slider {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: var(--violet);
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+  --cucumber: #00cc00;
+  --orange: #ff9966;
+  --blue: #006699;
+  --pink: #9a00cc;
+  --white: #ffffff;
 }
 
 .circle {
@@ -207,7 +99,7 @@ button {
 .small-circle_level-two {
   width: 230px;
   height: 220px;
-  background: conic-gradient(from 180deg, #ffffff, var(--yellow), #ffffff);
+  background: conic-gradient(from 180deg, var(--white), var(--yellow), var(--white));
   box-shadow: 0 0 10px 1px var(--yellow);
 }
 
@@ -333,8 +225,8 @@ button {
 .small-circle_level-eight {
   width: 140px;
   height: 135px;
-  background: radial-gradient(circle at top left, #1865c4, #9900cc);
-  box-shadow: 0px 7px 5px 1px #9a00cc;
+  background: radial-gradient(circle at top left, #1865c4, var(--pink));
+  box-shadow: 0px 7px 5px 1px var(--pink);
 }
 
 .small-circle_level-eight::after {
@@ -480,8 +372,8 @@ button {
 .small-circle_level-fifteen {
   width: 70px;
   height: 65px;
-  background: radial-gradient(circle at top left, #0099cc, #006699);
-  box-shadow: 0px 7px 5px 1px #006699;
+  background: radial-gradient(circle at top left, #0099cc, var(--blue));
+  box-shadow: 0px 7px 5px 1px var(--blue);
 }
 
 .small-circle_level-fifteen::after {
@@ -522,8 +414,8 @@ button {
 .small-circle_level-seventeen {
   width: 50px;
   height: 45px;
-  background: radial-gradient(circle at top left, #ffcc99, #ff9966);
-  box-shadow: 0px 7px 5px 1px #ff9966;
+  background: radial-gradient(circle at top left, #ffcc99, var(--orange));
+  box-shadow: 0px 7px 5px 1px var(--orange);
 }
 
 .small-circle_level-seventeen::after {
@@ -543,8 +435,8 @@ button {
 .small-circle_level-eighteen {
   width: 40px;
   height: 35px;
-  background: radial-gradient(circle at top left, #99ffcc, #66cc99);
-  box-shadow: 0px 7px 5px 1px #66cc99;
+  background: radial-gradient(circle at top left, var(--cucumber), var(--cucumber));
+  box-shadow: 0px 7px 5px 1px var(--cucumber);
 }
 
 .small-circle_level-eighteen::after {
