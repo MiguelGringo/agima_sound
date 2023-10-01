@@ -1,15 +1,49 @@
 .player {
-    position: absolute;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 200px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 6%;
-    z-index: 5;
-    box-shadow: 0 0 7px 0px black;
-  }
-  
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 200px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 6%;
+  z-index: 5;
+  box-shadow: 0 0 7px 0px black;
+}
+
+.picture {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 140px solid var(--opacityGreen);
+  left: 20%;
+  bottom: 28.5%;
+  z-index: -2;
+  opacity: 0.8;
+}
+
+.picture::before,
+.picture::after {
+  display: block;
+  content: '';
+  width: 50px;
+  height: 56.5px;
+  background-color: var(--opacityGreen);
+  position: absolute;
+  bottom: -196px;
+  z-index: -2;
+}
+
+.picture::before {
+  right: -67.7px;
+  transform: skew(25deg);
+}
+
+.picture::after {
+  left: -67.8px;
+  transform: skew(-25deg);
+}

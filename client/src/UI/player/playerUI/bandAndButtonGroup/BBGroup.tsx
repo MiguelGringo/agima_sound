@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import muteMusic from '../../../../assets/vol-mute-svgrepo-com.svg';
 import repMusic from '../../../../assets/vol-high-svgrepo-com.svg';
 import dreamMusic from '../../../../assets/music/dreams.mp3';
-import imageDreamMusic from '../../../../assets/dreams-mudic.webp';
 import './style/bbgroup.css'
 
 type BBGroupType = {
@@ -86,8 +85,8 @@ export default function BBGroup({ audioRef }: BBGroupType): JSX.Element {
           <img src={repMusic} alt="sound image" />
         </button>
       </div>
-      <div className="soundName" style={{ position: 'absolute', width: '150px', height: '150px' }}>
-        <img src={imageDreamMusic} alt="music img" />
+      <div className="soundName" >
+        Dream music
         <audio ref={audioRef} src={dreamMusic} />
       </div>
       <div

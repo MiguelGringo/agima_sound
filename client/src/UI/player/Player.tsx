@@ -11,8 +11,9 @@ type PlayerType = {
 export default function Player({ toggleAnimation, audioRef }: PlayerType): JSX.Element {
   return (
     <div className="player">
+      <div className="picture"></div>
       <ButtonGroup toggleAnimation={toggleAnimation} audioRef={audioRef}/>
-      <BBGroup audioRef={audioRef}/>
+      <BBGroup  audioRef={audioRef}/>
     </div>
   );
 }
